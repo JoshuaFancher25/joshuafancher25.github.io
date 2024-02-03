@@ -1,92 +1,130 @@
 <!DOCTYPE html>
 <html>
-<header>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Joshua Fancher - Software Engineer</title>
     <style>
         body {
-            background-color: rgb(154, 188, 241);
+            margin: 0;
+            padding: 0;
         }
 
-        .font-for-name {
-            font-family: arial, sans-serif, bold;
-            font-size: 48px;
+        .top-box {
+            height: 80px;
+            width: 100%;
+            background-color: rgba(38, 38, 78, 0.707);
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .font-for-wording-below-name {
-            font-family: arial;
-            font-style: italic;
-            font-size: 15px;
+        .container {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            justify-content: center;
         }
 
-        .grid-container {
-            display: grid;
-
-            height: 100vh;
-
-            /* width: 100vw;  */
-            background-color: rgba(0, 0, 255, 0.383);
-
-            /* why do we have to include it here*/
-            position: relative;
-
-            grid-template-areas:
-                "header header header"
-                "leftsidebar bodymiddle rightsidebar"
-                "footer footer footer";
-
-            /* this is where we specify the row sizes */
-            grid-template-columns: 1fr 4fr 1fr;
-            grid-template-rows: 0.5fr 1fr 1fr;
-
-            /* grid-template-rows: 16.6% 66.66% 16.6%; 
-            grid-template-columns: 16.6% 66.66% 16.6%;  */
-            min-height: 100vh;
-        }
-        .header-class {
-            grid-area: header; 
-        }
-        .left-sidebar-class {
-            grid-area: leftsidebar; 
-        }
-        .body-class {
-            grid-area: bodymiddle; 
-            display: flex; 
-            position: absolute; 
-            height: 100%; 
-            width: 100%; 
-            align-items: center; 
-            justify-content: center;   
+        .square {
+            width: 75px;
+            height: 75px;
+            background-color: red;
+            border: purple;
+            /* 3px solid; */
+            border-width: 3px;
+            border-style: solid;
+            /* margin: 0 10px; */
         }
 
-        .right-sidebar-class {
-            grid-area: rightsidebar; 
+
+        .square:hover {
+            background-color: green;
+            width: 75px;
+            height: 75px;
         }
-        .footer-class {
-            grid-area: footer; 
-            text-align: center; 
+
+        .spacing-from-top {
+            height: 90px;
+            width: 100%;
         }
-        .outline {
-            border: thin solid purple; 
+
+        .name-format {
+            color: white;
+            font-size: 30pt;
+            font-family: arial, sans-serif;
+        }
+
+
+        .bottom-box {
+            height: 100px;
+            width: 100%;
+            position: bottom;
+            /* relative positioning is in terms of the browser */
+            display: flex;
+            align-items: top;
+            justify-content: center;
+            border-top: blue dotted 3px;
+        }
+
+        @media(max-width: 600px) {
+            .square {
+                border: none;
+            }
+
         }
     </style>
+</head>
 
-    <body>
-        <div class="grid-container">
-            <div class="header-class outline"></div>
-            <div class = "left-sidebar-class outline">---</div>
-            <div class = "body-class font-for-name outline">Joshua Fancher</div>
-            <div class = "right-sidebar-class outline">---</div>
-            <div class = "footer-class outline">
-                <a href="./about/">About me page</a>
-                <a href="./projects/">Projects</a>
-                <a href="./hobbies/">Hobbies</a>
-                </div>
-            
+<body>
+    <div class='top-box'>
+        <div class='name-format'>Joshua Fancher</div>
+    </div>
+    <div class='spacing-from-top'></div>
 
-            </div>
-        </div>
-    </body>
+    <div class="container setting-middle">
 
-</html>
+        <div class="square"><img src = joshphoto.jpg/>"</div>
+        <div class="square"></div>
+        <div class="square"></div>
+
+    </div>
+
+
+    <div class='bottom-box'>
+        <table>
+            <tr>
+                <th>Contact Info:</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Email:</td>
+                    <td>: fancher.jo@northeastern.edu</td>
+                </tr>
+                <tr>
+                    <td>LinkedIn:</td>
+                    <td>: https://www.linkedin.com/joshuafancher</td>
+                </tr>
+                <tr>
+                    <td>Github:</td>
+                    <td>: joshuafancher25</td>
+                </tr>
+
+
+            </tbody>
+
+
+
+        </table>
+    </div>
+
+
+
+
+
+</body>
+</htnml>

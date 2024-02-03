@@ -10,14 +10,54 @@
             margin: 0;
             padding: 0;
         }
-        .custom-table {
-            font-size: 12px; 
-            padding: 0px; 
-            margin: 0px; 
-            transition: 700ms;
-            
+
+        li {
+            display: inline;
         }
-  
+
+        ul {
+            background-color: #dddddd;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #111;
+        }
+
+
+
+        .custom-table {
+            font-size: 12px;
+            padding: 0px;
+            margin: 0px;
+            transition: 700ms;
+
+        }
+
         .top-box {
             height: 80px;
             width: 100%;
@@ -26,7 +66,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            z-index: 1; 
+            z-index: 1;
         }
 
         .container {
@@ -36,7 +76,7 @@
             flex-direction: row;
             column-gap: 20px;
             justify-content: center;
-            align-items: center; 
+            align-items: center;
         }
 
         .square {
@@ -47,14 +87,14 @@
             /* 3px solid; */
             border-width: 3px;
             border-style: solid;
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
             transform: rotate(0deg);
             transition: 600ms;
             /* margin: 0 10px; */
         }
-        
+
         .photo-box {
             display: flex;
             width: 110px;
@@ -63,11 +103,12 @@
             float: right;
             /* margin: 20px 20px 20px 20px;  */
         }
+
         .center-text-in-links {
-            
+
             text-align: center;
         }
-  
+
 
 
 
@@ -107,23 +148,30 @@
                 border: none;
             }
         }
-        @media(max-width: 300px){
+
+        @media(max-width: 300px) {
             .square {
-                background-color: white; 
+                background-color: white;
             }
         }
-        @media(max-width: 300px){
+
+        @media(max-width: 300px) {
             .custom-table {
-                font-size: 5px; 
+                font-size: 5px;
             }
         }
-
-
-        
     </style>
 </head>
 
 <body>
+    <div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+          </ul> 
+    </div>
     <div class='top-box'>
         <div class='name-format'>Joshua Fancher</div>
     </div>
@@ -132,19 +180,19 @@
     <div class="container setting-middle">
 
         <div class="square"></div>
-        <div class="photo-box"><img src = "joshphoto.jpg"/></div>
+        <div class="photo-box"><img src="joshphoto.jpg" /></div>
         <div class="square"></div>
     </div>
     <p></p>
-    <div class = "center-text-in-links"><a href = "projects\index.html">Projects</a>
-         <a href = "hobbies\index.html">Hobbies</a>
-         <a href = "about\index.html">About</a>
+    <div class="center-text-in-links"><a href="projects\index.html">Projects</a>
+        <a href="hobbies\index.html">Hobbies</a>
+        <a href="about\index.html">About</a>
     </div>
     <p></p>
 
 
     <div class='bottom-box'>
-        <table class = "custom-table custom-table-td">
+        <table class="custom-table custom-table-td">
             <tr>
                 <th>Contact Info:</th>
             </tr>

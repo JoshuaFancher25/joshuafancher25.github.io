@@ -1,1 +1,179 @@
-<div>placeholder for hobbies</div>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Joshua Fancher - Software Engineer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .custom-table {
+            font-size: 12px; 
+            padding: 0px; 
+            margin: 0px; 
+            transition: 700ms;
+            
+        }
+  
+        .top-box {
+            height: 80px;
+            width: 100%;
+            background-color: rgb(74, 144, 205);
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1; 
+        }
+
+        .container {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            justify-content: center;
+            align-items: center; 
+        }
+
+        .square {
+            width: 60px;
+            height: 60px;
+            background-color: rgb(74, 144, 205);
+            border: purple;
+            /* 3px solid; */
+            border-width: 3px;
+            border-style: solid;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            transform: rotate(0deg);
+            transition: 600ms;
+            /* margin: 0 10px; */
+        }
+        
+        .photo-box {
+            display: flex;
+            width: 110px;
+            height: 110px;
+            /* border: 2px solid black; */
+            float: right;
+            /* margin: 20px 20px 20px 20px;  */
+        }
+        .center-text-in-links {
+            
+            text-align: center;
+        }
+  
+
+
+
+
+
+
+
+        .square:hover {
+            transform: rotate(180deg);
+        }
+
+        .spacing-from-top {
+            height: 90px;
+            width: 100%;
+        }
+
+        .name-format {
+            color: white;
+            font-size: 30pt;
+            font-family: arial, sans-serif;
+        }
+
+
+        .bottom-box {
+            height: 100px;
+            width: 100%;
+            position: bottom;
+            /* relative positioning is in terms of the browser */
+            display: flex;
+            align-items: top;
+            justify-content: center;
+            border-top: blue dotted 3px;
+        }
+
+        @media(max-width: 600px) {
+            .square {
+                border: none;
+            }
+        }
+        @media(max-width: 300px){
+            .square {
+                background-color: white; 
+            }
+        }
+        @media(max-width: 300px){
+            .custom-table {
+                font-size: 5px; 
+            }
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class='top-box'>
+        <div class='name-format'>Joshua Fancher</div>
+    </div>
+    <div class='spacing-from-top'></div>
+
+    <div class="container setting-middle">
+
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <p></p>
+    <div class = "center-text-in-links"><a href = "projects\index.html">Projects</a>
+         <a href = "hobbies\index.html">Hobbies</a>
+         <a href = "about\index.html">About</a>
+    </div>
+    <p></p>
+
+
+    <div class='bottom-box'>
+        <table class = "custom-table custom-table-td">
+            <tr>
+                <th>Contact Info:</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Email:</td>
+                    <td>: fancher.jo@northeastern.edu</td>
+                </tr>
+                <tr>
+                    <td>LinkedIn:</td>
+                    <td>: https://www.linkedin.com/joshuafancher</td>
+                </tr>
+                <tr>
+                    <td>Github:</td>
+                    <td>: joshuafancher25</td>
+                </tr>
+
+
+            </tbody>
+
+
+
+        </table>
+    </div>
+    <p></p>
+
+
+
+
+
+</body>
+</htnml>

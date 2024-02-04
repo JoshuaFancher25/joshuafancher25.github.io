@@ -21,6 +21,7 @@
         }
 
         ul {
+            z-index: 1; 
 
             margin-top: 80px;
 
@@ -45,6 +46,7 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            z-index: 1; 
         }
 
 
@@ -115,6 +117,7 @@
             /* margin: 20px 20px 20px 20px;  */
             transform: rotate(0deg);
             transition: 600ms;
+          
         }
 
         .center-text-in-links {
@@ -193,6 +196,10 @@
             height: 25px; 
             width: 100%; 
         }
+        .baby-box{
+            height: 10px; 
+            width: 10px; 
+        }
     </style>
 </head>
 
@@ -216,15 +223,15 @@
     <p></p>
     <p></p>
     <div class="container setting-middle">
-        <div class="photo-box"><img src="\projects\inventorytracking.jpg" /></div>
-        <div class="photo-box"><img src="\projects\coding.jpg" /></div>
+        <div class="photo-box"><a href = "https://cplusplus.com/doc/tutorial/" class = "photo-box"><img src="\projects\inventorytracking.jpg" /></a></div>
+        <div class="photo-box"><a href = "https://leetcode.com/trevifountain25/" class = "photo-box"><img src="\projects\coding.jpg" /></a></div>
         <div class="photo-box"><img src="\projects\airquality.jpg" /></div>
         
     </div>
 
     <div class="container setting-middle adjusted-height">
         <div class="box-for-text font-size-12">
-            Inventory System | LeetCode Contests | Air Quality OOP
+            <a href = "https://cplusplus.com/doc/tutorial/">Inventory System CPP</a> <span class= "baby-box"> </span> <a href = "https://cplusplus.com/doc/tutorial/">LeetCode Contests</a><span class = "baby-box"></span> Air Quality OOP
         </div>
 
 

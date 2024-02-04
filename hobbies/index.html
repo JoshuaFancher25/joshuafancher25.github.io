@@ -12,7 +12,7 @@
         }
 
         li {
-            
+
             display: inline;
         }
 
@@ -21,12 +21,16 @@
         }
 
         ul {
+
+            margin-top: 80px;
+
+
             list-style-type: none;
-            margin: 0;
+            /* margin: 0; */
             padding: 0;
             overflow: hidden;
             background-color: #333;
-            /* position: fixed; */
+            position: fixed;
             top: 0;
             width: 100%;
         }
@@ -74,19 +78,21 @@
         }
 
         .container {
-            height: 100px;
+            
+            height: 120px;
             width: 100%;
             display: flex;
             flex-direction: row;
             column-gap: 20px;
             justify-content: center;
             align-items: center;
+            
             margin-bottom: 0px;
         }
 
         .square {
-            width: 60px;
-            height: 60px;
+            width: 180px;
+            height: 80px;
             background-color: rgb(74, 144, 205);
             border: purple;
             /* 3px solid; */
@@ -102,8 +108,8 @@
 
         .photo-box {
             display: flex;
-            width: 110px;
-            height: 110px;
+            width: 70px;
+            height: 70px;
             /* border: 2px solid black; */
             float: right;
             /* margin: 20px 20px 20px 20px;  */
@@ -177,8 +183,16 @@
 
         .photo-box:hover {
 
-            transform: rotate(180deg);
+            transform:  scale(1.25);
         }
+        .adjusted-height {
+            height: 25px; 
+        }
+        .small-box {
+            height: 25px; 
+            width: 100%; 
+        }
+
     </style>
 </head>
 
@@ -209,13 +223,20 @@
    
     </div>
 
-    <div class="container setting-middle">
+    <div class="container setting-middle adjusted-height">
         <div class="box-for-text font-size-12">
             Gym | Traveling | Table Tennis
         </div>
 
-
     </div>
+    <p></p>
+    <div class = "small-box"></div>
+   
+
+
+
+
+
 
     <div class='bottom-box'>
         <table class="custom-table custom-table-td">

@@ -20,12 +20,17 @@
         }
 
         ul {
+            
+            margin-top: 80px; 
+            z-index: 1; 
+
+
             list-style-type: none;
-            margin: 0;
+            /* margin: 0; */
             padding: 0;
             overflow: hidden;
             background-color: #333;
-            /* position: fixed; */
+            position: fixed;
             top: 0;
             width: 100%;
         }
@@ -72,6 +77,8 @@
         }
 
         .container {
+            margin-top: 40px; 
+
             height: 100px;
             width: 100%;
             display: flex;
@@ -80,6 +87,7 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 0px; 
+        
         }
 
         .square {
@@ -96,6 +104,7 @@
             transform: rotate(0deg);
             transition: 600ms;
             /* margin: 0 10px; */
+           
         }
 
         .photo-box {
@@ -170,6 +179,18 @@
             margin: 0; 
             padding: 0; 
         }
+        .adjusted-height {
+            height: 25px; 
+        }
+        .add-spacing {
+            height: 5px; 
+            width: 100%; 
+        }
+        .small-box {
+            height: 25px; 
+            width: 100%; 
+        }
+  
     </style>
 </head>
 
@@ -198,16 +219,19 @@
         <div class="photo-box"><img src= "\joshphoto.jpg" /></div>
         <div class="square"></div>
     </div>
-   
-    <div class="container setting-middle">
-        <div class = "box-for-text font-size-12">
+    <div class="container setting-middle adjusted-height">
+        <div class="box-for-text font-size-12">
             Currently studying at Northeaster University in Seattle, Wa. 
         </div>
 
 
     </div>
+    <p></p>
+    <div class = "small-box"></div>
+   
 
-    <div class='bottom-box'>
+
+    <div class='bottom-box add-spacing add'>
         <table class="custom-table custom-table-td">
             <tr>
                 <th>Contact Info:</th>

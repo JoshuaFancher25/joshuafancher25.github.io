@@ -12,6 +12,7 @@
         }
 
         li {
+            
             display: inline;
         }
 
@@ -47,8 +48,9 @@
         li a:hover {
             background-color: rgb(74, 144, 205);
         }
-        .float-right-style-nav-bar{
-            float:right; 
+
+        .float-right-style-nav-bar {
+            float: right;
         }
 
 
@@ -79,7 +81,7 @@
             column-gap: 20px;
             justify-content: center;
             align-items: center;
-            margin-bottom: 0px; 
+            margin-bottom: 0px;
         }
 
         .square {
@@ -105,6 +107,8 @@
             /* border: 2px solid black; */
             float: right;
             /* margin: 20px 20px 20px 20px;  */
+            transform: rotate(0deg);
+            transition: 600ms;
         }
 
         .center-text-in-links {
@@ -157,23 +161,29 @@
                 font-size: 5px;
             }
         }
+
         .font-size-12 {
-            font-size: 12px; 
+            font-size: 12px;
         }
-   
+
         .box-for-text {
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            width: 300px; 
-            margin: 0; 
-            padding: 0; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .photo-box:hover {
+
+            transform: rotate(180deg);
         }
     </style>
 </head>
 
 <body>
-    
+
 
     <div class='top-box'>
         <div class='name-format'>Joshua Fancher</div>
@@ -184,23 +194,24 @@
     <div>
         <ul>
             <li><a href="projects\index.html">Projects</a></li>
-            <li><a href="hobbies\index.html">Hobbies</a></li>
-            <li><a class="active" href="about\index.html">Contact</a></li>
-            <li class = "float-right-style-nav-bar"><a  href="about\index.html">About</a></li>
-          </ul> 
+            <li><a class="active" href="hobbies\index.html">Hobbies</a></li>
+            <li><a href="about\index.html">Contact</a></li>
+            <li class="float-right-style-nav-bar"><a href="about\index.html">About</a></li>
+        </ul>
     </div>
     <p></p>
     <p></p>
     <div class="container setting-middle">
-       
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-    </div>
+
+        <div class="photo-box"><img src="\contact\email.jpg" /></div>
+        <div class="photo-box"><img src="\contact\linkedin.jpg" /></div>
+        <div class="photo-box"><img src="\contact\octocat.jpg" /></div>
    
+    </div>
+
     <div class="container setting-middle">
-        <div class = "box-for-text font-size-12">
-            Email | LinkedIn | Phone 
+        <div class="box-for-text font-size-12">
+            Email | LinekdIn | GitHub
         </div>
 
 

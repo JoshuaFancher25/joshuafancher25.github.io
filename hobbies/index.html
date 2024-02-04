@@ -10,14 +10,56 @@
             margin: 0;
             padding: 0;
         }
-        .custom-table {
-            font-size: 12px; 
-            padding: 0px; 
-            margin: 0px; 
-            transition: 700ms;
-            
+
+        li {
+            display: inline;
         }
-  
+
+        ul {
+            background-color: #dddddd;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            /* position: fixed; */
+            top: 0;
+            width: 100%;
+        }
+
+        .active {
+            background-color: rgb(74, 144, 205);
+        }
+
+        li a {
+            display: inline;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: rgb(74, 144, 205);
+        }
+        .float-right-style-nav-bar{
+            float:right; 
+        }
+
+
+        .custom-table {
+            font-size: 12px;
+            padding: 0px;
+            margin: 0px;
+            transition: 700ms;
+
+        }
+
         .top-box {
             height: 80px;
             width: 100%;
@@ -26,7 +68,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            z-index: 1; 
+            z-index: 1;
         }
 
         .container {
@@ -36,7 +78,8 @@
             flex-direction: row;
             column-gap: 20px;
             justify-content: center;
-            align-items: center; 
+            align-items: center;
+            margin-bottom: 0px; 
         }
 
         .square {
@@ -47,14 +90,14 @@
             /* 3px solid; */
             border-width: 3px;
             border-style: solid;
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
             transform: rotate(0deg);
             transition: 600ms;
             /* margin: 0 10px; */
         }
-        
+
         .photo-box {
             display: flex;
             width: 110px;
@@ -63,16 +106,11 @@
             float: right;
             /* margin: 20px 20px 20px 20px;  */
         }
+
         .center-text-in-links {
-            
+
             text-align: center;
         }
-  
-
-
-
-
-
 
 
         .square:hover {
@@ -80,7 +118,7 @@
         }
 
         .spacing-from-top {
-            height: 90px;
+            height: 80px;
             width: 100%;
         }
 
@@ -107,44 +145,69 @@
                 border: none;
             }
         }
-        @media(max-width: 300px){
+
+        @media(max-width: 300px) {
             .square {
-                background-color: white; 
+                background-color: white;
             }
         }
-        @media(max-width: 300px){
+
+        @media(max-width: 300px) {
             .custom-table {
-                font-size: 5px; 
+                font-size: 5px;
             }
         }
-
-
-        
+        .font-size-12 {
+            font-size: 12px; 
+        }
+   
+        .box-for-text {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 300px; 
+            margin: 0; 
+            padding: 0; 
+        }
     </style>
 </head>
 
 <body>
+    
+
     <div class='top-box'>
         <div class='name-format'>Joshua Fancher</div>
     </div>
     <div class='spacing-from-top'></div>
 
+
+    <div>
+        <ul>
+            <li><a href="projects\index.html">Projects</a></li>
+            <li><a class = "active" href="hobbies\index.html">Hobbies</a></li>
+            <li><a href="about\index.html">Contact</a></li>
+            <li class = "float-right-style-nav-bar"><a href="about\index.html">About</a></li>
+          </ul> 
+    </div>
+    <p></p>
+    <p></p>
     <div class="container setting-middle">
-
+       
         <div class="square"></div>
         <div class="square"></div>
         <div class="square"></div>
     </div>
-    <p></p>
-    <div class = "center-text-in-links"><a href = "projects\index.html">Projects</a>
-         <a href = "hobbies\index.html">Hobbies</a>
-         <a href = "about\index.html">About</a>
-    </div>
-    <p></p>
+   
+    <div class="container setting-middle">
+        <div class = "box-for-text font-size-12">
+            Mario Kart | Golf | Gym
+        </div>
 
+
+    </div>
 
     <div class='bottom-box'>
-        <table class = "custom-table custom-table-td">
+        <table class="custom-table custom-table-td">
             <tr>
                 <th>Contact Info:</th>
             </tr>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Joshua Fancher - Software Engineer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+
+            display: inline;
+        }
+
+        ul {
+            background-color: #dddddd;
+        }
+
+        ul {
+            z-index: 1;
+
+
+            margin-top: 80px;
+
+
+            list-style-type: none;
+            /* margin: 0; */
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .active {
+            background-color: rgb(74, 144, 205);
+        }
+
+        li a {
+            display: inline;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: rgb(74, 144, 205);
+        }
+
+        .float-right-style-nav-bar {
+            float: right;
+        }
+
+
+        .custom-table {
+            font-size: 12px;
+            padding: 0px;
+            margin: 0px;
+            transition: 700ms;
+
+        }
+
+        .top-box {
+            height: 80px;
+            width: 100%;
+            background-color: rgb(74, 144, 205);
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .container {
+
+            height: 120px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            justify-content: center;
+            align-items: center;
+
+            margin-bottom: 0px;
+        }
+
+        .square {
+            width: 180px;
+            height: 80px;
+            background-color: rgb(74, 144, 205);
+            border: purple;
+            /* 3px solid; */
+            border-width: 3px;
+            border-style: solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(0deg);
+            transition: 600ms;
+            /* margin: 0 10px; */
+        }
+
+        .photo-box {
+            display: flex;
+            width: 70px;
+            height: 70px;
+            /* border: 2px solid black; */
+            float: right;
+            /* margin: 20px 20px 20px 20px;  */
+            transform: rotate(0deg);
+            transition: 600ms;
+        }
+
+        .center-text-in-links {
+
+            text-align: center;
+        }
+
+
+        .square:hover {
+            transform: rotate(180deg);
+        }
+
+        .spacing-from-top {
+            height: 80px;
+            width: 100%;
+        }
+
+        .name-format {
+            color: white;
+            font-size: 30pt;
+            font-family: arial, sans-serif;
+        }
+
+
+        .bottom-box {
+            height: 50px;
+            width: 100%;
+            position: bottom;
+            /* relative positioning is in terms of the browser */
+            display: flex;
+            align-items: top;
+            justify-content: center;
+            border-top: blue dotted 3px;
+        }
+
+        @media(max-width: 600px) {
+            .square {
+                border: none;
+            }
+        }
+
+        @media(max-width: 300px) {
+            .square {
+                background-color: white;
+            }
+        }
+
+        @media(max-width: 300px) {
+            .custom-table {
+                font-size: 5px;
+            }
+        }
+
+        .font-size-12 {
+            font-size: 12px;
+        }
+
+        .box-for-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .photo-box:hover {
+
+            transform: scale(1.25);
+        }
+
+        .adjusted-height {
+            height: 25px;
+        }
+
+        .small-box {
+            height: 25px;
+            width: 100%;
+        }
+
+        .baby-box {
+            height: 10px;
+            width: 10px;
+        }
+
+        .postion-on-bottom {
+            /* display: flex;  */
+            /* position: absolute;  */
+            bottom: 0;
+            size: 5px;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+
+
+    <div class='top-box'>
+        <div class='name-format'>Joshua Fancher</div>
+    </div>
+    <div class='spacing-from-top'></div>
+
+
+    <div>
+        <ul>
+
+
+
+            <li><a href="../projects/">Projects</a></li>
+            <li><a class="active" href="../hobbies/">Hobbies</a></li>
+            <li><a href="../contact/">Contact</a></li>
+            <li class="float-right-style-nav-bar"><a href="../">About</a></li>
+
+        </ul>
+    </div>
+    <p></p>
+    <p></p>
+    <div class="container setting-middle">
+
+        <div class="photo-box"><a href="https://www.24hourfitness.com" class="photo-box"><img
+                    src="\hobbies\dumbbell.jpg" /></a></div>
+        <div class="photo-box"><a href="https://www.booking.com" class="photo-box"><img src="\hobbies\plane.jpg" /></a>
+        </div>
+        <div class="photo-box"><a
+                href="https://olympics.com/en/news/table-tennis-rules-regulations-how-to-play-official-laws-serve"
+                class="photo-box"><img src="\hobbies\tabletennis.jpg" /></a></div>
+
+    </div>
+
+    <div class="container setting-middle adjusted-height">
+        <div class="box-for-text font-size-12">
+            <a href="https://www.24hourfitness.com">Gym</a> <span class="baby-box"> </span><span class="baby-box">
+            </span><span class="baby-box"> </span> <a href="https://www.booking.com">Traveling</a><span
+                class="baby-box"> </span><span class="baby-box"> </span><span class="baby-box"></span> <a
+                href="https://olympics.com/en/news/table-tennis-rules-regulations-how-to-play-official-laws-serve">Table
+                Tennis</a>
+        </div>
+
+    </div>
+    <p></p>
+    <div class="small-box"></div>
+    <div class="small-box"></div>
+    <div class="small-box"></div>
+
+
+
+
+
+
+
+
+    <div class='bottom-box'>
+        <table class="custom-table custom-table-td">
+            <tr>
+                <th>Contact Info:</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Email:</td>
+                    <td>: <a href="https://www.outlook.com">fancher.jo@northeastern.edu</a></td>
+                </tr>
+                <tr>
+                    <td>LinkedIn:</td>
+                    <td>: <a
+                            href="https://www.linkedin.com/in/joshuafancher/">https://www.linkedin.com/in/joshuafancher</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Github:</td>
+                    <td>: <a href="https://github.com/JoshuaFancher25">joshuafancher25</a></td>
+                </tr>
+
+
+            </tbody>
+
+
+
+        </table>
+    </div>
+    <p></p>
+
+
+
+
+
+</body>
+</htnml>

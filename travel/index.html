@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Joshua Fancher</title>
     <style>
- 
- .custom-table {
+        .custom-table {
             font-size: 12px;
             padding: 0px;
             margin: 0px;
@@ -70,13 +69,20 @@
 
         .photo-box-little {
             display: flex;
-            width: 70px;
-            height: 70px;
+            width: 90px;
+            height: 90px;
             /* border: 2px solid black; */
             float: right;
             /* margin: 20px 20px 20px 20px;  */
 
         }
+        .photo-box-little:hover {
+
+            transform: scale(1.25);
+            transition: 600ms;
+        }
+
+
 
         .center-text-in-links {
 
@@ -129,6 +135,7 @@
                 font-size: 5px;
             }
         }
+
         /* @media(min-width: 2000px) {
             .top-box {
                 display: None; 
@@ -136,7 +143,7 @@
         } */
         @media(max-width: 150px) {
             .top-box {
-                display: None; 
+                display: None;
             }
         }
 
@@ -174,6 +181,13 @@
         }
 
         .photo-box:hover {
+
+            transform: scale(1.25);
+            transition: 600ms;
+
+        }
+
+        .photo-box-little:hover {
 
             transform: scale(1.25);
             transition: 600ms;
@@ -323,9 +337,10 @@
             padding: 10px 0;
             font-size: 22px;
         }
+
         li:hover {
-            background-color: rgb(226, 226, 226); 
-            width: 140px; 
+            background-color: rgb(226, 226, 226);
+            width: 140px;
         }
 
         /*
@@ -334,15 +349,13 @@
         #menuToggle input:checked~ul {
             transform: none;
         }
-
-    
     </style>
 
 </head>
 
 <body>
 
-  
+
     <nav role="navigation">
         <div id="menuToggle">
             <!--
@@ -383,7 +396,7 @@
 
                     </li>
                 </a>
-                
+
             </ul>
         </div>
     </nav>
@@ -394,41 +407,36 @@
     <div class='spacing-from-top'></div>
 
 
-   
+
     <p></p>
     <p></p>
     <div class="container setting-middle">
 
-        <div class="photo-box"><a href="https://www.24hourfitness.com" class="photo-box"><img
-                    src="\hobbies\dumbbell.jpg" /></a></div>
-        <div class="photo-box"><a href="https://www.booking.com" class="photo-box"><img src="\hobbies\plane.jpg" /></a>
+        <div class="photo-box-little"><a href="#" class="photo-box-little"><img src="\travel\hikinglogo.jpg" /></a></div>
+        <div class="photo-box-little"><a href="#" class="photo-box-little"><img src="\travel\surfer.jpg" /></a>
         </div>
-        <div class="photo-box"><a
-                href="https://olympics.com/en/news/table-tennis-rules-regulations-how-to-play-official-laws-serve"
-                class="photo-box"><img src="\hobbies\tabletennis.jpg" /></a></div>
+        <div class="photo-box-little"><a href="#" class="photo-box-little"><img src="\travel\van.jpg" /></a></div>
 
     </div>
 
     <div class="container setting-middle adjusted-height">
         <div class="box-for-text font-size-12">
-            <a href="#">USA</a> <span class="baby-box"> </span><span class="baby-box">
-            </span><span class="baby-box"> </span> <a href="#">Europe</a><span
-                class="baby-box"> </span><span class="baby-box"> </span><span class="baby-box"></span> <a
-                href="#">Asia
-                Tennis</a>
+            <a href="#">Hiking</a> <span class="baby-box"> </span><span class="baby-box">
+            </span><span class="baby-box"> </span> <a href="#">Water Sports</a><span class="baby-box"> </span><span
+                class="baby-box"> </span><span class="baby-box"></span> <a href="#">
+                Road Trips</a>
         </div>
 
     </div>
 
     <div class="container setting-middle adjusted-height">
         <div class="box-for-text font-size-12 center-text-in-links">
-            Currently, I'm studying at Northeastern University in Seattle, Wa. Persuing a Master of Science in Computer
-            Science.
+            Life is a journey.
         </div>
     </div>
     <div class="container setting-middle adjusted-height center-text-in-links">
         <div class="box-for-text font-size-12">
-            This site was created HTML/CSS and is hosted on GitHub Pages.
+            Enjoy the ride.
         </div>
     </div>
     <p></p>

@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Joshua Fancher</title>
     <style>
- 
- .custom-table {
+        .custom-table {
             font-size: 12px;
             padding: 0px;
             margin: 0px;
@@ -77,6 +76,7 @@
             /* margin: 20px 20px 20px 20px;  */
 
         }
+
         .photo-box-little:hover {
 
             transform: scale(1.25);
@@ -135,6 +135,7 @@
                 font-size: 5px;
             }
         }
+
         /* @media(min-width: 2000px) {
             .top-box {
                 display: None; 
@@ -142,7 +143,7 @@
         } */
         @media(max-width: 150px) {
             .top-box {
-                display: None; 
+                display: None;
             }
         }
 
@@ -329,9 +330,10 @@
             padding: 10px 0;
             font-size: 22px;
         }
+
         li:hover {
-            background-color: rgb(226, 226, 226); 
-            width: 140px; 
+            background-color: rgb(226, 226, 226);
+            width: 140px;
         }
 
         /*
@@ -341,14 +343,48 @@
             transform: none;
         }
 
-    
+        .grid-container {
+
+            display: grid;
+            position: relative; 
+            /*
+                grid-template-columns: 50% 15px 20%;
+                grid-template-rows: 50px 20% 20px; 
+                gap: 10px; 
+                */
+            grid-template-areas:
+                "header header header"
+                "body body sidebar"
+                "body body sidebar";
+            grid-template-rows: 100px 25px 25px;
+
+        }
+
+        .headerClass {
+            grid-area: header;
+        }
+
+        .sideClass {
+            grid-area: sidebar;
+
+        }
+
+        .bodybodyClass {
+            grid-area: body;
+
+        }
+
+        .rectangle {
+            border: thin solid palevioletred;
+            flex-grow: 1;
+        }
     </style>
 
 </head>
 
 <body>
 
-  
+
     <nav role="navigation">
         <div id="menuToggle">
             <!--
@@ -389,21 +425,21 @@
 
                     </li>
                 </a>
-              
-                
+
+
             </ul>
         </div>
     </nav>
 
 
-    
+
     <div class='top-box'>
         <div class='name-format'>Joshua Fancher</div>
     </div>
     <div class='spacing-from-top'></div>
 
 
- 
+
     <div class="baby-box"></div>
     <div class="container setting-middle">
         <div class="photo-box-little"><a href="#" class="photo-box-little"></a></div>
@@ -416,15 +452,15 @@
             Lorem Ipsum - Hiking
         </div>
     </div>
-    <div class="container setting-middle adjusted-height center-text-in-links">
-        <div class="box-for-text font-size-12">
+    <div class="container setting-middle adjusted-height">
+        <div class="box-for-text font-size-12 center-text-in-links">
             Lorem Ipsum - Hiking
         </div>
     </div>
 
 
     <p></p>
-    <div class="small-box"></div>
+   
 
 
 
